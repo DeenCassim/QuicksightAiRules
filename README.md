@@ -2,10 +2,7 @@
 
 Subject identification rule
 
-The Subject field is the identifier used to determine which subject a record belongs to (e.g., licensing records, Opportunities, etc.).
-Always filter or scope queries using the Subject field value — either "Financial Literacy" or "Maths" — based on what the user is asking about.
-If a user mentions "Financial Literacy" or "Maths" it's always related to the subject.
-If the user's question doesn't specify a subject and the answer would differ by subject, ask the user to confirm which subject they mean before querying.
+If the user's question references "Financial Literacy" or "Maths" (in either wording, singly or together, case-insensitive), filter Opportunities where Subject equals "Financial Literacy and Maths" — this is a single combined picklist value in Salesforce, not two separate subjects.
 
 Date range handling rule
 
